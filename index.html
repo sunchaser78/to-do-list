@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Simple To-Do List</title>
+</head>
+<body>
+    <div id="app-header">
+        <h1>To-Do List</h1>
+        <p>Add tasks using the input field below. Set their priority, edit, or delete as needed. Drag and drop tasks between columns to organize your workflow.</p>
+    </div>
+
+    <div id="todo-app-container">
+        <!-- Input and Submit Button -->
+        <div id="input-area">
+            <input type="text" id="task-input" placeholder="Enter a new task">
+            <select id="task-priority" class="task-priority">
+                <option value="" disabled selected>Set Priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+           
+            
+        </div>
+
+        
+    
+        <!-- Columns -->
+        <div id="columns-container">
+            <!-- Column 1: To Do -->
+            <div class="todo-column" id="todo-column">
+                <h2 id="todo-title">To Do (0)</h2>
+                <div id="tasks-list" class="task-container"></div>
+            </div>
+    
+            <!-- Column 2: Working On -->
+            <div class="todo-column" id="working-on-column">
+                <h2 id="working-on-title">Working On (0)</h2>
+                <div id="working-on-list" class="task-container"></div>
+            </div>
+    
+            <!-- Column 3: Complete -->
+            <div class="todo-column" id="complete-column">
+                <h2 id="complete-title">Complete (0)</h2>
+                <div id="complete-list" class="task-container"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+        
+    
+    <script src="script.js"></script>
+
+    <!DOCTYPE html>
+
+
+</body>
+</html>
+
+
